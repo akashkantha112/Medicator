@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/akash/AndroidStudioProjects/ciem_hackathon/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/akash/AndroidStudioProjects/ciem_hackathon/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "347"
+                    }
+                }
+            ]
+        }
+    ]
+}

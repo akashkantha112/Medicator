@@ -1,0 +1,4 @@
+#Fri Apr 12 22:16:13 IST 2019
+base.0=/home/akash/AndroidStudioProjects/ciem_hackathon/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
