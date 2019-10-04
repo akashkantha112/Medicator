@@ -12,6 +12,14 @@ class Prediction extends StatefulWidget {
 }
 
 class _PredictionState extends State<Prediction> {
+  
+  String predictionString = "Predictions";
+  String errorString = "Some error occured";
+  
+  String diseaseName = "name";
+  String diseaseProbability = "chance";
+  
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,12 +29,12 @@ class _PredictionState extends State<Prediction> {
             onPressed: () {
               Navigator.pop(context);
             }),
-        title: Text("Predictions"),
+        title: Text(predictionString),
       ),
       body: widget.diseases.length == 0
           ? Container(
               child: Center(
-                child: Text("Some error occured"),
+                child: Text(errorString),
               ),
             )
           : Container(
@@ -39,11 +47,11 @@ class _PredictionState extends State<Prediction> {
                           context,
                           PageTransition(
                               child: Details(
-                                  widget.diseases[index]["name"].toLowerCase()),
+                                  widget.diseases[index][diseaseName].toLowerCase()),
                               type: PageTransitionType.downToUp));
                     },
-                    title: Text(widget.diseases[index]["name"]),
-                    subtitle: Text(widget.diseases[index]["chance"].toString()),
+                    title: Text(widget.diseases[index][diseaseName]),
+                    subtitle: Text(widget.diseases[index][diseaseProbability].toString()),
                   );
                 },
               ),
